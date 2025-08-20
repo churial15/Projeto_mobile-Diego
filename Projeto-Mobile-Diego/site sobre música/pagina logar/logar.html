@@ -71,10 +71,17 @@
     .login-box a:hover {
       text-decoration: underline;
     }
+
+      .obrigatorio-texto {
+      color: #ccc;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
   <div class="login-box">
+          <p class="obrigatorio-texto"><span style="color: red;">*</span>campo obrigatório</p>
     <h2>Logar</h2>
     <form action="/login" method="POST">
       <input type="text" name="username" placeholder="Usuário" required>
@@ -88,4 +95,5 @@
 
 </body>
 </html>
+
 
